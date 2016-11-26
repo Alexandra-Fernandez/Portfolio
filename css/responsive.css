@@ -1,0 +1,161 @@
+/*=========== RESPONSIVE =============*/
+
+@media (max-width: 769px) {
+
+    aside{
+        position: fixed;
+        width: 100%;
+        padding: 0;
+        z-index: 100;
+        height: inherit;
+        background-color: rgba(39, 127, 131, 0.94);
+    }
+
+    aside p:first-child{
+        font-size: 2em;
+        text-align: center;
+    }
+    .habilidades .description {
+        display: none;
+    }
+
+    i.fa.fa-bars{
+        margin: 10px;
+    }
+
+    i.fa.fa-bars:hover{
+        cursor: pointer;
+    }
+    
+    aside .fa,
+    .asideToggle .fa{
+        color: white;
+    }
+
+    aside ul{
+        position: absolute;
+        right: 100%;
+        width: 100%;
+        height: 39vh;
+        transition: all .5s linear;/* efecto del link */
+        -webkit-transition: all .5s linear;
+        -moz-transition: all .5s linear;
+        -o-transition: all .5s linear;
+    }
+
+    ul.mostrar{
+        position: absolute;
+        right: 0;
+        width: 100%;
+        background-color: rgba(39, 127, 131, 0.94);
+        height: 44vh;
+    }
+
+    aside ul > li:hover{
+        box-shadow: 50em 0 rgba(255, 255, 255,0.2) inset;
+        color: white; 
+    }
+
+/*    #home{
+        color: white;
+        background-image: url(../img/about/py3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+    }*/
+
+    #home h1{
+        font-size: 2.5em;
+    }
+
+    #home p {
+        font-size: 1.5em;
+    }
+    
+    .overlay{
+        background-color: rgba(0,0,0,0.5);
+        height: 100vh;
+        width: 100%;
+        display: flex;        /* centrar el texto */
+        align-items: center;
+        justify-content: center;  /* end centrar el texto */
+    }
+
+
+    #contactame,
+    #habilidades,
+    #portfolio,
+    #about{
+        margin-left: 0;
+    }
+  
+
+    /*=======  ABOUT =======*/
+    .about img{
+        height: inherit;
+        width: 50%;
+    }
+
+    .informacion{
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .about .foto {
+        padding-top: 10%;
+    }
+
+
+    /*=======  PORTFOLIO =======*/
+
+.portfolio {
+    padding: 13% 3%;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+#imagen,#imagen3{
+    margin-left: -9px;
+}
+
+.imagen1{
+    min-height: 216px;
+    margin-bottom: 20px;
+}
+
+    /*=======  HABILIDADES =======*/
+    .habilidades{
+        padding-top: 28.3%;
+    }
+
+
+    .jade{
+        width: 27%;
+    }
+
+    .habilidades .fa-stack{
+        width: 1.6em;
+        height: 1.6em;
+        line-height: 1.6em;    
+    }
+
+    
+
+
+    /*=======  CONTÁCTAMR =======*/
+    .correo{
+        font-size: 25px;
+        margin: 0 0 64px;
+    }
+
+
+}

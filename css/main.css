@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2{
+  font-family: 'Kaushan Script';
+}
+
+h1{
+    font-size: 5em;
+}
+
+h2{
+  font-size: 2.7em;
+}
+
+
+html{
+    height: 100vh;
+}
+
+.divider,
+.linehorizontal{
+    border: 1px solid white;
+    width: 9%;
+    margin: 4% auto;
+}
+
+.divider{
+    width: 5%;
+    margin: 2% auto 2.5%;
+}
+
+#home,aside{
+    height: 100vh;
+}
+
+/*===============================*/
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:0;
+}
+/*==================================*/
+
+#home{
+    background-color: white;
+    background-image: url(../img/fondos/vi9s3k.gif);
+    color: white;
+    display: flex;        /* centrar el texto */
+    align-items: center;
+    justify-content: center;  /* end centrar el texto */
+}
+
+/*#homeToggle .btn-default,*/
+#home .btn-default{
+    color: white;
+    background-color: #277F83;
+    font-size: 1.5em;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+
+}
+
+/*#homeToggle .btn-default:hover,*/
+#home .btn-default:hover{
+    border: 1px solid #30A99E;
+    background-color: transparent;
+}
+
+#home p{
+    font-family: 'ABeezee';
+    font-size: 2.5em;
+}
+
+.contenido{
+    display: none;
+}
+
+aside{
+    position: fixed;
+    width: 217px;
+    background-image: url(../img/fondos/tumblr_nrjpypMLWV1tle0q1o1_500.gif);
+    color: white;
+    padding: 74px 0px;
+}
+
+aside p:first-child{
+    font-family: 'Kaushan Script';
+    font-size: 2.7em;
+    text-align: center;
+}
+
+aside p:nth-child(2){
+    padding: 10px 0;
+}
+
+aside img{
+    border-radius: 95%;
+    width: 100px;
+    margin: auto;
+    border: 1px solid white;
+    padding: 4%;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul > li{
+    /*padding: 13px 40px;*/
+    font-size: 1.1em;
+    box-shadow: 3px 0 rgba(255, 255, 255, 0.2) inset;
+    margin-bottom: 3px; 
+    transition: all .4s linear;/* efecto del link */
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+a,a:hover,a:active,a:focus,
+aside ul > li > a,
+aside ul > li > a:focus,
+aside ul > li > a:hover{
+    text-decoration: none ;
+    color: white ;
+}
+
+aside ul > li:hover{
+    box-shadow: 15em 0 rgba(255, 255, 255,0.2) inset;
+    color: white; 
+}
+
+aside ul>li>a{
+    display: block;
+    width: 100%;
+    padding: 13px 40px;
+    /*margin-left: 1em;*/
+    transition: all .4s linear;/* efecto del link */
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+aside ul > li > a> span{
+    font-family: 'Montserrat';
+}
+
+aside ul > li > a> i{
+    margin-right: 8px;
+}
+
+.redSocial{
+    text-align: center;
+    padding: 15% 0px;
+}
+
+.redSocial .fa-stack{
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 100%;
+    background-color: #1C565D;
+    margin: 0px 3px;
+    font-size: 1.3em;
+    transition: all .4s linear;/* efecto media social */
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear; 
+}
+
+.redSocial .fa-stack:hover{
+    border: 1px solid #1C565D;
+    background-color: #277F83;
+}
+
+section{
+    margin-left: 217px;
+    height: 100vh;
+    color: white;
+}
+
+/*================ ABOUT ===============*/
+
+.about{
+    background-image: url(../img/fondos/29126910-La-repetici-n-de-fondo-de-papel-tapiz-de-puntos-de-colores-pastel-Foto-de-archivo.jpg);
+    text-align: center;
+    color: black;
+}
+
+.about img{
+    border-radius: 50%;
+    width: 64%;
+    height: 54vh;
+    margin: auto;
+}
+
+.about .foto{
+    padding-top: 28%;
+}
+
+.informacion{
+    padding-top: 35%;
+    padding-left: 17%;
+}
+
+.informacion p{
+    font-size: 1.2em;
+    font-family: 'ABeezee';
+    text-align: justify;
+}
+
+/*================ PORTAFOLIO ===============*/
+
+.portfolio{
+    background-image: url(../img/fondos/29126910-La-repetici-n-de-fondo-de-papel-tapiz-de-puntos-de-colores-pastel-Foto-de-archivo.jpg);
+    padding: 2% 3%;
+    position: relative;
+    color: black;
+}
+
+.title{
+    padding: 2% 0;
+}
+
+.imagen1{
+    perspective :1000px;
+    -webkit-perspective: 1000px; /* Chrome, Safari, Opera  */
+}
+
+.imagen1 .frenteImagen{
+    position: absolute;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
+
+.imagen1 .detrasImagen{
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+    -webkit-filter: hue-rotate(180deg); /* Chrome y Safari */
+    -moz-filter: hue-rotate(180deg); /* Mozilla */
+    -ms-filter: hue-rotate(180deg); /* Internet Explorer */
+    -o-filter: hue-rotate(180deg); /* Opera */
+}
+
+.imagen1:hover .frenteImagen{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+
+.imagen1:hover .detrasImagen{
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
+
+.imagen1 p{
+    background-color: #F44336;
+    border-bottom: 1px sollid #fff;
+    border-top: 1px sollid #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 7%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.3em;
+}
+
+.provisional{
+    padding: 12% 0 4%; /* revisar solo muestra */
+}
+
+/*================= HABILIDADES ==================*/
+
+.habilidades{
+    background-image: url(../img/fondos/parallax.png);
+    padding-top: 0.5%;
+}
+
+.habilidades .fa-stack{
+    border: 4px double #FFF;
+    border-radius: 73%;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+ 
+.habilidades .fa{
+    font-size: 3.5em;
+    position: absolute;
+}
+
+p{
+    font-size: 1.2em;
+    font-family: 'ABeezee';
+    text-align: justify;
+    text-align: center;
+}
+
+
+
+/*================= CONTACTAME ==================*/
+
+.contactame .boxPhoto{
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    display: flex;        /* centrar el texto */
+    align-items: center;
+    justify-content: center;  /* end centrar el texto */
+}   
+
+.contactame{
+    background-image: url(../img/fondos/Fondo-abstracto-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.correo{
+    font-family: 'Kaushan Script';
+    font-size: 3em;
+}
+
+.contactame .fa{
+    font-size: 6em;
+}
+
+.contactame .fa.fa-stack{
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin: 4% 2% 0;
+    transition: all .4s linear;/* efecto del link */
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    border-radius: 29%;
+    /*border: 1px dashed #277F83;*/
+}
+
+.contactame .fa.fa-stack:hover{
+    background-color: rgb(39, 127, 131);
+    border-radius: 29%;
+}
+
+
+#asideToggle{
+    display: none;
+}
+
+
