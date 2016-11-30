@@ -59,7 +59,7 @@ canvas {
 #home .btn-default{
     color: white;
     background-color: #277F83;
-    font-size: 1.5em;
+    font-size: 1em;
     border: 1px solid transparent;
     position: relative;
     z-index: 1;
@@ -184,16 +184,17 @@ aside ul > li > a> i{
 
 section{
     margin-left: 217px;
-    height: 100vh;
+   
     color: white;
 }
 
 /*================ ABOUT ===============*/
 
 .about{
-    background-image: url(../img/fondos/29126910-La-repetici-n-de-fondo-de-papel-tapiz-de-puntos-de-colores-pastel-Foto-de-archivo.jpg);
+    background-color: beige;
     text-align: center;
     color: black;
+    padding-bottom: 9%;
 }
 
 .about img{
@@ -218,73 +219,13 @@ section{
     text-align: justify;
 }
 
-/*================ PORTAFOLIO ===============*/
-
-.portfolio{
-    background-image: url(../img/fondos/29126910-La-repetici-n-de-fondo-de-papel-tapiz-de-puntos-de-colores-pastel-Foto-de-archivo.jpg);
-    padding: 2% 3%;
-    position: relative;
-    color: black;
-}
-
-.title{
-    padding: 2% 0;
-}
-
-.imagen1{
-    perspective :1000px;
-    -webkit-perspective: 1000px; /* Chrome, Safari, Opera  */
-}
-
-.imagen1 .frenteImagen{
-    position: absolute;
-    transform: rotateY(0deg);
-    backface-visibility: hidden;
-    transition: all .4s linear;
-}
-
-.imagen1 .detrasImagen{
-    position: absolute;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-    transition: all .4s linear;
-    -webkit-filter: hue-rotate(180deg); /* Chrome y Safari */
-    -moz-filter: hue-rotate(180deg); /* Mozilla */
-    -ms-filter: hue-rotate(180deg); /* Internet Explorer */
-    -o-filter: hue-rotate(180deg); /* Opera */
-}
-
-.imagen1:hover .frenteImagen{
-    transform: rotateY(-180deg);
-    cursor: pointer;
-}
-
-.imagen1:hover .detrasImagen{
-    transform: rotateY(0deg);
-    cursor: pointer;
-}
-
-.imagen1 p{
-    background-color: #F44336;
-    border-bottom: 1px sollid #fff;
-    border-top: 1px sollid #fff;
-    position: absolute;
-    width: 100%;
-    bottom: 7%;
-    height: 35px;
-    line-height: 35px;
-    font-size: 1.3em;
-}
-
-.provisional{
-    padding: 12% 0 4%; /* revisar solo muestra */
-}
 
 /*================= HABILIDADES ==================*/
 
 .habilidades{
     background-image: url(../img/fondos/parallax.png);
     padding-top: 0.5%;
+    padding-bottom: 7%;
 }
 
 .habilidades .fa-stack{
@@ -306,8 +247,125 @@ p{
     text-align: justify;
     text-align: center;
 }
+/*================ PORTAFOLIO ===============*/
 
+.portfolio{
+    background-color: beige;
+    padding: 2% 3%;
+    position: relative;
+    color: black;
+    padding-bottom: 7%;
+}
 
+.title{
+    padding: 2% 0;
+}
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 10px solid bisque;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: pointer;
+    background: #fff no-repeat center center
+}
+.view .mask, .view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: 'ABeezee';
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    border-radius: 4px;
+    font-family: 'ABeezee';
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+.view-sixth img { 
+	transition: all 0.4s ease-in-out 0.5s; 
+}
+.view-sixth .mask{ 
+	background-color: rgba(146,96,91,0.5);
+	opacity:0;
+	transition: all 0.3s ease-in 0.4s;
+}
+.view-sixth h2{
+	opacity:0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.view-sixth p { 
+	opacity:0;
+    transform: scale(10);
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.view-sixth a.info { 
+	opacity:0;
+    transform: translateY(100px);
+	transition: all 0.3s ease-in-out 0.1s;
+}
+.view-sixth:hover .mask {  
+	opacity:1; 
+	transition-delay: 0s;
+}																			 
+.view-sixth:hover img { 
+	transition-delay: 0s; 
+}
+.view-sixth:hover h2 { 
+	opacity: 1;
+    transform: scale(1);
+	transition-delay: 0.1s;
+}
+.view-sixth:hover p { 
+	opacity:1; 
+    transform: scale(1);
+	transition-delay: 0.2s;
+}
+.view-sixth:hover a.info { 
+	opacity:1;
+    transform: translateY(0px);
+	transition-delay: 0.3s;
+}
 
 /*================= CONTACTAME ==================*/
 
@@ -327,7 +385,7 @@ p{
 
 .correo{
     font-family: 'Kaushan Script';
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .contactame .fa{
@@ -356,5 +414,3 @@ p{
 #asideToggle{
     display: none;
 }
-
-

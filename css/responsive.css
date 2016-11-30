@@ -26,7 +26,7 @@
     i.fa.fa-bars:hover{
         cursor: pointer;
     }
-    
+
     aside .fa,
     .asideToggle .fa{
         color: white;
@@ -42,7 +42,6 @@
         -moz-transition: all .5s linear;
         -o-transition: all .5s linear;
     }
-
     ul.mostrar{
         position: absolute;
         right: 0;
@@ -56,15 +55,6 @@
         color: white; 
     }
 
-/*    #home{
-        color: white;
-        background-image: url(../img/about/py3.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 0;
-    }*/
-
     #home h1{
         font-size: 2.5em;
     }
@@ -72,24 +62,24 @@
     #home p {
         font-size: 1.5em;
     }
-    
+
     .overlay{
         background-color: rgba(0,0,0,0.5);
         height: 100vh;
         width: 100%;
-        display: flex;        /* centrar el texto */
+        display: flex;        
         align-items: center;
-        justify-content: center;  /* end centrar el texto */
+        justify-content: center;  
     }
 
 
     #contactame,
-    #habilidades,
     #portfolio,
+    #habilidades,
     #about{
         margin-left: 0;
     }
-  
+
 
     /*=======  ABOUT =======*/
     .about img{
@@ -109,37 +99,32 @@
 
     /*=======  PORTFOLIO =======*/
 
-.portfolio {
-    padding: 13% 3%;
-}
+    .portfolio {
+        padding: 13% 3%;
+    }
 
-.clearfix::before,
-.clearfix::after {
-    content: "";
-    display: table;
-}
+    .clearfix::before,
+    .clearfix::after {
+        content: "";
+        display: table;
+    }
 
-.clearfix::after {
-    clear: both;
-}
+    .clearfix::after {
+        clear: both;
+    }
 
-#imagen,#imagen3{
-    margin-left: -9px;
-}
+    #imagen, #imagen3{
+        margin-left: 20px;
+    }
 
-.imagen1{
-    min-height: 216px;
-    margin-bottom: 20px;
-}
+    .imagen1{
+        min-height: 216px;
+        margin-bottom: 20px;
+    }
 
     /*=======  HABILIDADES =======*/
     .habilidades{
         padding-top: 28.3%;
-    }
-
-
-    .jade{
-        width: 27%;
     }
 
     .habilidades .fa-stack{
@@ -148,10 +133,10 @@
         line-height: 1.6em;    
     }
 
-    
 
 
-    /*=======  CONTÁCTAMR =======*/
+
+    /*=======  CONTÁCTAME =======*/
     .correo{
         font-size: 25px;
         margin: 0 0 64px;
