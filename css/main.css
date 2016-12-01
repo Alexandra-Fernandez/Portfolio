@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.img-circle{
+    background-color: beige;
+    border: 5px solid #277F83;
+}
 
 h1,h2{
   font-family: 'Kaushan Script';
@@ -37,13 +41,6 @@ html{
     height: 100vh;
 }
 
-/*===============================*/
-canvas {
-  position: absolute;
-  top:0;
-  left:0;
-  z-index:0;
-}
 /*==================================*/
 
 #home{
