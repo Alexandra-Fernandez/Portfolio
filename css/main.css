@@ -3,9 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+.titulo-inicio{
+    font-size: 3.3em;
+    font-family: 'ABeezee';
+    margin-bottom: 24px;
+}
+.boton-inicio{
+    margin: 8px 8px 8px;
+}
+.parrafo-inicio{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
 .laptop{
-    background-color: beige;
-    border: 5px solid #277F83;
+    border: 5px solid beige;
 }
 
 h1,h2{
@@ -55,7 +66,7 @@ html{
 /*#homeToggle .btn-default,*/
 #home .btn-default{
     color: white;
-    background-color: #277F83;
+    background-color: #30A99E;
     font-size: 1em;
     border: 1px solid transparent;
     position: relative;
@@ -85,7 +96,7 @@ html{
 aside{
     position: fixed;
     width: 217px;
-    background-image: url(../img/fondos/tumblr_nrjpypMLWV1tle0q1o1_500.gif);
+    background-color: #333333;
     color: white;
     padding: 74px 0px;
 }
@@ -165,7 +176,8 @@ aside ul > li > a> i{
     height: 2.5em;
     line-height: 2.5em;
     border-radius: 100%;
-    background-color: #1C565D;
+    background-color: beige;
+    color: black;
     margin: 0px 3px;
     font-size: 1.3em;
     transition: all .4s linear;/* efecto media social */
@@ -175,8 +187,8 @@ aside ul > li > a> i{
 }
 
 .redSocial .fa-stack:hover{
-    border: 1px solid #1C565D;
-    background-color: #277F83;
+    border: 1px solid beige;
+    background-color: black;
 }
 
 section{
@@ -243,6 +255,10 @@ p{
     font-family: 'ABeezee';
     text-align: justify;
     text-align: center;
+}
+.barras{
+    margin-left: 65px;
+    margin-right: 65px;
 }
 /*================ PORTAFOLIO ===============*/
 
@@ -375,9 +391,8 @@ p{
 }   
 
 .contactame{
-    background-image: url(../img/fondos/Fondo-abstracto-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../img/fondos/parallax.png);
+  
 }
 
 .correo{
